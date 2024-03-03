@@ -1,5 +1,5 @@
-City,MinPrice,MaxPrice,MinSpace,MaxSpace,Range,furnished,email
+city,MinPrice,MaxPrice,MinSpace,MaxSpace,range,furnishing,email
 Enschede,,300,6,15,5,,anton@anton.com
 Groningen,400,1200,18,,10,,daniel@daniel.com
 Amsterdam,,,10,,5,True,krisiyan@krisiyan.com
-Rotterdam,900,,9,,40,True,paarth@paarth.com
+Rotterdam,900,,9,,40,,paarth@paarth.com
