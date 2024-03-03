@@ -1,4 +1,4 @@
-Location,MinPrice,MaxPrice,MinSpace,MaxSpace,email
+City,MinPrice,MaxPrice,MinSpace,MaxSpace,email
 Enschede,,300,6,15,anton@anton.com
 Groningen,400,1200,18,,daniel@daniel.com
 Amsterdam,,,10,,krisiyan@krisiyan.com
