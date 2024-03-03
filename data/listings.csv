@@ -1,0 +1,16 @@
+City,Street,Price,Area,email
+Enschede,Getfertsingel 168,600,10,roommate1@enschede.com
+Enschede,Noordendorplaan 10,800,10,roommate2@enschede.com
+Enschede,Noordendorplaan 10,800,10,roommate2@enschede.com
+Hengelo,Professor Lorentzstraat 10,500,9.5,roommate1@hengelo.com
+Hengelo,Professor Lorentzstraat 10,500,9.5,roommate1@hengelo.com
+Hengelo,Deurningerstraat 9,1200,20,roommate2@hengelo.com
+Enschede,Spinnerstraat 20,500,15,roommate2@enschede.com
+Amsterdam,Oudezijds Voorburgwal 149,2000,30,real@amsterdam.com
+Amsterdam,Binnen Bantammerstraat 28,1200,20,real@amsterdam.com
+Amsterdam,Binnen Bantammerstraat 28,2500,30,real@amsterdam.com
+Amsterdam,Binnen Bantammerstraat 23,1200,20,real@amsterdam.com
+Rotterdam,Waterjufferstraat 1,2000,30,real@rotterdam.com
+Rotterdam,Vlinderstraat 16,1200,20,real@rotterdam.com
+Groningen,Kruitlaan 1,1000,15,real@groningen.com
+Groningen,Kruitgracht 17B,1200,15,real@groningen.com
