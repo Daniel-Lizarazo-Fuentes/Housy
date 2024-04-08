@@ -3,7 +3,7 @@
 </script>
 
 <template lang="html">
-  <div>
+  <div class="h-screen w-full bg-white dark:bg-neutral-900">
     <Navbar />
     <slot />
   </div>

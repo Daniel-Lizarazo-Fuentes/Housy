@@ -2,9 +2,8 @@
   
 </script>
 
-
 <template lang="html">
   <div>
-    Hello there 
+    
   </div>
 </template>
