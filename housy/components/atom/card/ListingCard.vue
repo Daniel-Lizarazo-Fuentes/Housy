@@ -1,5 +1,7 @@
 <script setup lang="ts">
-  
+ defineProps<{
+    item: Listing;
+  }>();
 </script>
 
 <template lang="html">
@@ -7,15 +9,16 @@
   <div
     class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-neutral-800 ">
     <img
-      src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+      src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       alt="card-image" />
-  </div>
+  </div> 
+              
   <div class="p-6 text-neutral-900 dark:text-white bg-white dark:bg-neutral-800">
     <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-      UI/UX Review Check
+      {{ item.name }}
     </h5>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+      The place is close to {{item.city}} Beach and bus stop just 2 min by walk
       and near to "Naviglio" where you can enjoy the main night life in
       Barcelona.
     </p>

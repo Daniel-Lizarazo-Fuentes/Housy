@@ -24,8 +24,6 @@ const emits = defineEmits(["updated"])
 watch(value, () => {
   emits("updated", value)
 })
-
-console.log(locations)
 </script>
 
 <template>

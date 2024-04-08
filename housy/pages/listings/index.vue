@@ -57,6 +57,7 @@ const {
     <ListingCard 
       v-for="(item, index) in data"
       :key="index"
+      :item="item"
     />
     </div>
     <div class="my-4 flex flex-row gap-1 fixed bottom-10 bg-white dark:bg-neutral-900 p-3 rounded-md border-2 border-neutral-200 dark:border-neutral-800">

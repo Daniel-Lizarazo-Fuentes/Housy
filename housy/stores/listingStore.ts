@@ -61,7 +61,14 @@ export const useListingStore = defineStore(
       });
     });
 
-    const filtered_listings = listings;
+    const filtered_listings = ref<Array<Listing>>([]);
+
+    const filters = ref({
+      house_type: "",
+      house_size: "",
+      house_location: "",
+      house_price: "",
+    });
 
     function find_by_id(id: string): Listing | undefined {
       return listings.value.find((listing: Listing) => {
@@ -69,13 +76,56 @@ export const useListingStore = defineStore(
       });
     }
 
+    function filterSizeRange(size: number, sizeCategory: string): boolean {
+      if (sizeCategory === "100plus") {
+        return size >= 100;
+      } else {
+        const [lower, upper] = sizeCategory.split("to").map(value => parseInt(value));
+        if (!upper) {
+          return size >= lower;
+        } else {
+          return size >= lower && size < upper;
+        }
+      }
+    }
+
+    function filterPriceRange(price: number, priceCategory: string): boolean {
+      switch (priceCategory) {
+        case '300':
+          return price <= 300;
+        case '500':
+          return price <= 500;
+        case '700':
+          return price <= 700;
+        case '900':
+          return price <= 900;
+        case '99999999':
+          return price > 900;
+        default:
+          return true; 
+      }
+    }
+
     function filter_listings(
-      cost: string,
+      house_type: string,
+      size: string,
       location: string,
-      price: string,
-      house_type: string
+      price: string
     ): void {
-      //TODO
+      filters.value.house_type = house_type;
+      filters.value.house_size = size;
+      filters.value.house_location = location;
+      filters.value.house_price = price;
+
+      filtered_listings.value = listings.value.filter(listing => {
+
+        const typeMatch = filters.value.house_type === "" || listing.listing_type === filters.value.house_type;
+        const sizeMatch = filters.value.house_size === "" || filterSizeRange(listing.size, filters.value.house_size);
+        const locationMatch = filters.value.house_location === "" || listing.city === filters.value.house_location;
+        const priceMatch = filters.value.house_price === "" || filterPriceRange(listing.price, filters.value.house_price);
+    
+        return typeMatch && sizeMatch && locationMatch && priceMatch;
+      });
     }
 
     return {
