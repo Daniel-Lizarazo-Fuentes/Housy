@@ -10,12 +10,12 @@ const listingStore = useListingStore()
 const { listings } = storeToRefs(listingStore)
 
 
-const locations = listings.value.map((listing, index ) => {
+const locations = Array.from(new Set(listings.value.map(listing => listing.city))).map((city, index) => {
   return {
-    id: index, 
-    city: listing.city
-  }
-})
+    id: index,
+    city: city
+  };
+}).sort((a, b) => a.city.localeCompare(b.city));
 
 const open = ref(false)
 const value = ref('')
