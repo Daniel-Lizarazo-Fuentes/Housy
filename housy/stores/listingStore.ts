@@ -61,7 +61,7 @@ export const useListingStore = defineStore(
       });
     });
 
-    const filtered_listings = ref<Array<Listing>>([]);
+    const filtered_listings = ref<Array<Listing>>(listings.value);
 
     const filters = ref({
       house_type: "",
@@ -112,14 +112,14 @@ export const useListingStore = defineStore(
       location: string,
       price: string
     ): void {
-      filters.value.house_type = house_type;
+      filters.value.house_type = house_type.toLowerCase();
       filters.value.house_size = size;
       filters.value.house_location = location;
       filters.value.house_price = price;
 
       filtered_listings.value = listings.value.filter(listing => {
 
-        const typeMatch = filters.value.house_type === "" || listing.listing_type === filters.value.house_type;
+        const typeMatch = filters.value.house_type === "" || listing.listing_type.toLowerCase() === filters.value.house_type;
         const sizeMatch = filters.value.house_size === "" || filterSizeRange(listing.size, filters.value.house_size);
         const locationMatch = filters.value.house_location === "" || listing.city === filters.value.house_location;
         const priceMatch = filters.value.house_price === "" || filterPriceRange(listing.price, filters.value.house_price);

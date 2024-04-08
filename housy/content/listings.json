@@ -10,6 +10,66 @@
     "furnishing": "furnished"
   },
   {
+    "type": "room",
+    "price": 250,
+    "utilities": "excluded",
+    "city": "Enschede",
+    "size": "12 m²",
+    "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
+    "date": "recent",
+    "furnishing": "furnished"
+  },
+  {
+    "type": "room",
+    "price": 400,
+    "utilities": "excluded",
+    "city": "Enschede",
+    "size": "13 m²",
+    "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
+    "date": "recent",
+    "furnishing": "furnished"
+  },
+  {
+    "type": "room",
+    "price": 600,
+    "utilities": "excluded",
+    "city": "Enschede",
+    "size": "14 m²",
+    "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
+    "date": "recent",
+    "furnishing": "furnished"
+  },
+  {
+    "type": "studio",
+    "price": 900,
+    "utilities": "excluded",
+    "city": "Enschede",
+    "size": "28 m²",
+    "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
+    "date": "recent",
+    "furnishing": "furnished"
+  },
+  {
+    "type": "room",
+    "price": 550,
+    "utilities": "excluded",
+    "city": "Enschede",
+    "size": "20 m²",
+    "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
+    "date": "recent",
+    "furnishing": "furnished"
+  },
+  {
+    "type": "house",
+    "price": 1200,
+    "utilities": "excluded",
+    "city": "Enschede",
+    "size": "67 m²",
+    "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
+    "date": "recent",
+    "furnishing": "furnished"
+  },
+  {
     "street": "Galjoenstraat,",
     "city": "Zaandam",
     "size": "16 m²",
