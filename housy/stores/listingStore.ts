@@ -12,7 +12,7 @@ export type Listing = {
   size: number;
   url: string;
   date: string;
-  furnishing: "furnished" | "unfirnished" | "carpeted" | "uncarpeted";
+  furnishing: "furnished" | "unfurnished" | "carpeted" | "uncarpeted";
   landlord: {
     name: string;
     number: string | undefined;
@@ -47,10 +47,10 @@ export const useListingStore = defineStore(
         url: data.url,
         date: data.date,
         furnishing: (data.type.match(
-          /\b(?:furnished|unfirnished|carpeted|uncarpeted)\b/i
-        ) || ["unfirnished"])[0] as
+          /\b(?:furnished|unfurnished|carpeted|uncarpeted)\b/i
+        ) || ["unfurnished"])[0] as
           | "furnished"
-          | "unfirnished"
+          | "unfurnished"
           | "carpeted"
           | "uncarpeted",
         landlord: {

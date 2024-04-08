@@ -46,9 +46,9 @@ function performSearch() {
       </h4>
     </div>
     <div
-      class="flex flex-row items-center justify-center p-10 rounded-md w-full bg-neutral-100 dark:bg-black/40"
+      class="flex flex-row items-center justify-center gap-12 p-10 rounded-md w-full bg-neutral-100 dark:bg-black/40"
     >
-      <div class="w-5/12 flex flex-row gap-2">
+      <div class="w-full flex-1 flex flex-row gap-2">
         <div class="flex flex-col items-start jusitfy-center gap-1">
           <p
             class="font-semibold text-neutral-500 dark:text-neutral-100 text-sm pl-1"
@@ -73,24 +73,24 @@ function performSearch() {
           </p>
           <ComboboxSize v-on:updated="select_house_size" />
         </div>
-      </div>
-      <div class="w-7/12 flex flex-row items-center justify-center gap-1">
-        <div class="flex flex-col items-start justify-center gap-1 w-full">
-          <p
-            class="font-semibold text-neutral-500 dark:text-neutral-100 text-sm"
-          >
-            Location
-          </p>
-          <ComboboxLocation v-on:updated="select_house_location" />
-        </div>
-        <div class="flex flex-col items-center justify-end pt-6">
-          <Button variant="outline" @click="performSearch()">
-            <NuxtLink  to="/listings" >
-              <MagnifyingGlassIcon
-                class="w-5 h-5 text-neutral-900 dark:text-white"
-              />
-            </NuxtLink>
-          </Button>
+        <div class="flex flex-1 flex-row items-center justify-center gap-1">
+          <div class="flex flex-col items-start justify-center gap-1 w-full">
+            <p
+              class="font-semibold text-neutral-500 dark:text-neutral-100 text-sm"
+            >
+              Location
+            </p>
+            <ComboboxLocation v-on:updated="select_house_location" />
+          </div>
+          <div class="flex flex-col items-center justify-end pt-6">
+            <Button variant="outline" @click="performSearch()">
+              <NuxtLink to="/listings">
+                <MagnifyingGlassIcon
+                  class="w-5 h-5 text-neutral-900 dark:text-white"
+                />
+              </NuxtLink>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
