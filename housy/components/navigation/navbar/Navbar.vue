@@ -45,17 +45,6 @@ const search = () => {
           <SunIcon v-if="isDark" class="text-white w-5 h-5"/>
           <MoonIcon v-else class="w-5 h-5 text-neutral-600" />
         </Button>
-
-        <Button
-          variant="ghost"
-          class="bg-white dark:bg-black"
-        >
-          <NuxtLink 
-            to="/user/1234"
-          >
-            <UserIcon class="w-5 h-5 text-neutral-600 dark:text-white" />  
-          </NuxtLink>
-        </Button>
       </div>
     </div>
   </div>

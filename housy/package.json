@@ -12,6 +12,7 @@
   "dependencies": {
     "@heroicons/vue": "^2.1.3",
     "@pinia/nuxt": "^0.5.1",
+    "@vee-validate/zod": "^4.12.6",
     "@vueuse/components": "^10.9.0",
     "@vueuse/core": "^10.9.0",
     "class-variance-authority": "^0.7.0",
@@ -25,9 +26,11 @@
     "shadcn-nuxt": "^0.10.2",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
+    "vee-validate": "^4.12.6",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vue-toastification": "^2.0.0-rc.5"
+    "vue-toastification": "^2.0.0-rc.5",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",

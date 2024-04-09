@@ -61,7 +61,7 @@ function performSearch() {
           <p
             class="font-semibold text-neutral-500 dark:text-neutral-100 text-sm pl-1"
           >
-            Price
+            Price (euros)
           </p>
           <ComboboxPrice v-on:updated="select_house_price" />
         </div>
@@ -69,7 +69,7 @@ function performSearch() {
           <p
             class="font-semibold text-neutral-500 dark:text-neutral-100 text-sm pl-1"
           >
-            Size
+            Size (m2)
           </p>
           <ComboboxSize v-on:updated="select_house_size" />
         </div>

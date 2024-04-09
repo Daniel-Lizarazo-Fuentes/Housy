@@ -1,13 +1,20 @@
 <script setup lang="ts">
-
+import { useToast } from "vue-toastification"
 import { useListingStore } from "../../stores/listingStore.ts"
 
 const listingStore = useListingStore()
 const route = useRoute()
+const toast = useToast()
 
 const listing_id = route.params.id;
 const { find_by_id } = listingStore;
 
+const listing = find_by_id(listing_id)
+console.log(listing)
+
+const onSumbit = () => {
+  toast.success("Successfully contacted Landlord")
+}
 </script>
 
 <template lang="html">
@@ -40,28 +47,29 @@ const { find_by_id } = listingStore;
       </div>
 
       <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2 text-neutral-900 dark:text-white">
-        <h1 class="sm: text-2xl font-bold text-neutral-900 dark:text-white sm:text-3xl">Listing name</h1>
+          <h1 class="sm: text-2xl font-bold text-neutral-900 dark:text-white sm:text-3xl">{{ listing.name }}</h1>
 
-        <h2 class="mt-8 text-base text-neutral-900 dark:text-white font-semibold">Core Type</h2>
+        <h2 class="mt-8 text-base text-neutral-900 dark:text-white font-semibold">Core</h2>
         <div class="mt-3 flex select-none flex-wrap items-center gap-1">
-          <Badge
-            v-for="(item,index) in 10"
-            :key="index"
-          >Badge</Badge> 
+            <Badge class="text-sm px-2 py-1 rounded-md">City: {{ listing.city }} </Badge>
+            <Badge class="text-sm px-2 py-1 rounded-md">Type: {{listing.listing_type }}</Badge>
+            <Badge class="text-sm px-2 py-1 rounded-md">Size: {{ listing.size }} </Badge>
+            <Badge class="text-sm px-2 py-1 rounded-md">Price: {{ listing.price }} </Badge>
+            <Badge class="text-sm px-2 py-1 rounded-md">Utilities: {{listing.cover_cost}} </Badge>  
         </div>
 
         <h2 class="mt-8 text-base text-neutral-900 dark:text-white font-semibold">Utilities</h2>
         <div class="mt-3 flex select-none flex-wrap items-center gap-1">
           <Badge
-            v-for="(item,index) in 10"
+            v-for="(item,index) in listing.utilities"
             :key="index"
           >Badge</Badge>
         </div>
 
         <div class="mt-10 flex flex-col items-center justify-between space-y-4 border-t border-b py-4 sm:flex-row sm:space-y-0">
           <div class="flex items-end">
-            <h1 class="text-3xl font-bold">$60.50</h1>
-            <span class="text-base">/month</span>
+              <h1 class="text-3xl font-bold flex gap-1">€{{listing.price}}</h1>
+              <span class="text-base">/month</span>
           </div>
           
           <Dialog>
@@ -74,25 +82,26 @@ const { find_by_id } = listingStore;
               <DialogTitle>
                 Contact Landlord
               </DialogTitle>
+              <form class="w-2/3 space-y-6">
+                <FormField v-slot="{ componentField }" name="username">
+                  <FormItem>
+                    <FormLabel>Username</FormLabel>
+                    <FormControl>
+                      <Textarea type="text" placeholder="Some nice message" v-bind="componentField" />
+                    </FormControl>
+                    <FormDescription>
+                      This is your public display name.
+                    </FormDescription>
+                    <FormMessage />
+                  </FormItem>
+                </FormField>
+                <div @click="onSumbit()" >
+                  Submit
+                </div>
+              </form>
             </DialogContent>
           </Dialog>
         </div>
-
-        <ul class="mt-8 space-y-2">
-          <li class="flex items-center text-left text-sm font-medium text-gray-600">
-            <svg class="mr-2 block h-5 w-5 align-middle text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" class=""></path>
-            </svg>
-            Free shipping worldwide
-          </li>
-
-          <li class="flex items-center text-left text-sm font-medium text-gray-600">
-            <svg class="mr-2 block h-5 w-5 align-middle text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" class=""></path>
-            </svg>
-            Cancel Anytime
-          </li>
-        </ul>
       </div>
 
       <div class="lg:col-span-3">
@@ -107,10 +116,14 @@ const { find_by_id } = listingStore;
               </TabsTrigger>
             </TabsList>
             <TabsContent value="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dicta, ipsa neque, aliquid optio porro repellat quas placeat amet harum quibusdam rerum voluptatem fugiat! Voluptatibus corporis veritatis consequuntur tempore natus.
+              <h1 class="text-neutral-900 dark:text-white font-semibold">
+                {{ listing.description}}
+              </h1>    
             </TabsContent>
-            <TabsContent value="landlord">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+            <TabsContent value="landlord" class="flex flex-col items-start justify-start gap-2">
+              <h1 class="text-neutral-900 dark:text-white font-semibold">Name: {{listing.landlord.name}}</h1>
+              <h1 class="text-neutral-900 dark:text-white font-semibold">Number: {{listing.landlord.number}}</h1>
+              <h1 class="text-neutral-900 dark:text-white font-semibold">Email: {{listing.landlord.email}}</h1>
             </TabsContent>
           </Tabs>
         </div>

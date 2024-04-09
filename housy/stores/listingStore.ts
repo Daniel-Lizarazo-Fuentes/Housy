@@ -72,7 +72,7 @@ export const useListingStore = defineStore(
 
     function find_by_id(id: string): Listing | undefined {
       return listings.value.find((listing: Listing) => {
-        listing.id === id;
+        return listing.id === id;
       });
     }
 
