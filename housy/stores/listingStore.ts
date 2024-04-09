@@ -4,7 +4,7 @@ import listingsJSON from "../content/listings.json";
 export type Listing = {
   id: string;
   name: string;
-  listing_type: "house" | "apartment" | "studio" | "room" | "attic";
+  listing_type: "house" | "apartment" | "studio" | "room";
   price: number;
   utilities: Array<string>;
   cover_cost: "included" | "excluded";
@@ -42,24 +42,14 @@ export const useListingStore = defineStore(
     }
 
     listingsJSON.forEach((data, index) => {
+      const listingType = (data.type.match(
+        /\b(?:house|apartment|studio|room|attic)\b/i
+      ) || ["room"])[0] as "house" | "apartment" | "studio" | "room";
+
       listings.value.push({
         id: index.toString(),
-        name:
-          capitalizeFirstLetter(
-            (data.type.match(/\b(?:house|apartment|studio|room|attic)\b/i) || [
-              "room",
-            ])[0]
-          ) +
-          " in " +
-          data.city,
-        listing_type: (data.type.match(
-          /\b(?:house|apartment|studio|room|attic)\b/i
-        ) || ["room"])[0] as
-          | "house"
-          | "apartment"
-          | "studio"
-          | "room"
-          | "attic",
+        name: capitalizeFirstLetter(listingType) + " in " + data.city,
+        listing_type: listingType,
         price: parseInt(data.price.toString().replace(",", "")),
         utilities: [],
         cover_cost: (data.type.match(/\b(?:incl.)\b/i) || ["excluded"])[0] as
@@ -68,11 +58,7 @@ export const useListingStore = defineStore(
         city: data.city,
         size: parseInt(data.size.replace(" m²", "")),
         url: data.url,
-        imgUrl: getRandomImageUrl(
-          (data.type.match(/\b(?:house|apartment|studio|room|attic)\b/i) || [
-            "room",
-          ])[0] as "house" | "apartment" | "studio" | "room" | "attic"
-        ),
+        imgUrl: getRandomImageUrl(listingType),
         date: data.date,
         furnishing: (data.type.match(
           /\b(?:furnished|unfurnished|carpeted|uncarpeted)\b/i
@@ -81,7 +67,7 @@ export const useListingStore = defineStore(
           | "unfurnished"
           | "carpeted"
           | "uncarpeted",
-        description: data.description,
+        description: "",
         landlord: {
           name: "Dave van Dijk",
           number: "+31 6 835 7353",
@@ -91,6 +77,13 @@ export const useListingStore = defineStore(
     });
 
     const filtered_listings = ref<Array<Listing>>(listings.value);
+
+    const filters = ref({
+      house_type: "",
+      house_size: "",
+      house_location: "",
+      house_price: "",
+    });
 
     function find_by_id(id: string): Listing | undefined {
       return listings.value.find((listing: Listing) => {
@@ -136,16 +129,24 @@ export const useListingStore = defineStore(
       location: string,
       price: string
     ): void {
+      filters.value.house_type = house_type;
+      filters.value.house_size = size;
+      filters.value.house_location = location;
+      filters.value.house_price = price;
+
       filtered_listings.value = listings.value.filter((listing) => {
-   
         const typeMatch =
-        house_type === "" ||
-          (listing.listing_type as string).toLowerCase() === house_type.value;
-    
-        const sizeMatch = size.value === "" || filterSizeRange(listing.size, size.value);
-        const locationMatch = location.value === "" || listing.city === location.value;
+          filters.value.house_type === "" ||
+          listing.listing_type.toLowerCase() === filters.value.house_type;
+        const sizeMatch =
+          filters.value.house_size === "" ||
+          filterSizeRange(listing.size, filters.value.house_size);
+        const locationMatch =
+          filters.value.house_location === "" ||
+          listing.city === filters.value.house_location;
         const priceMatch =
-          price.value === "" || filterPriceRange(listing.price, price.value);
+          filters.value.house_price === "" ||
+          filterPriceRange(listing.price, filters.value.house_price);
 
         return typeMatch && sizeMatch && locationMatch && priceMatch;
       });

@@ -9,7 +9,6 @@ const frameworks = [
   { value: 'house', label: 'House' },
   { value: 'studio', label: 'Studio' },
   { value: 'room', label: 'Room' },
-  { value: 'attic', label: 'Attic' },
 ]
 
 const open = ref(false)
