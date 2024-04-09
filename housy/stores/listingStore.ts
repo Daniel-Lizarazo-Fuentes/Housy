@@ -37,10 +37,21 @@ export const useListingStore = defineStore(
       return `${basePath}${listingType.toLowerCase()}${randomNumber}.jpg`;
     }
 
+    function capitalizeFirstLetter(string: string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     listingsJSON.forEach((data, index) => {
       listings.value.push({
         id: index.toString(),
-        name: "Listing" + index.toString(),
+        name:
+          capitalizeFirstLetter(
+            (data.type.match(/\b(?:house|apartment|studio|room|attic)\b/i) || [
+              "room",
+            ])[0]
+          ) +
+          " in " +
+          data.city,
         listing_type: (data.type.match(
           /\b(?:house|apartment|studio|room|attic)\b/i
         ) || ["room"])[0] as

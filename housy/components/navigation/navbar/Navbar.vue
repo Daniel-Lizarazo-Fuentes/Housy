@@ -22,7 +22,6 @@ const search = () => {
 <template lang="html">
   <div class="fixed z-10 top-0 left-1/2 -translate-x-1/2 flex flex-row items-center justify-between w-10/12 mx-auto h-20 gap-2 bg-white dark:bg-neutral-900">
     <div class="flex flex-row items-center justify-start w-[30%] gap-2">
-      <NavbarPageNavigator />
       <Button 
         variant="ghost"
         class="bg-white dark:bg-black"
