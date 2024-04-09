@@ -2,6 +2,16 @@
 defineProps<{
   item: Listing;
 }>();
+
+function getRandomInt(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomImageUrl(listingType: string) {
+  const basePath = `img/`;
+  const randomNumber = getRandomInt(1, 5);
+  return `${basePath}${listingType.toLowerCase()}${randomNumber}.jpg`;
+}
 </script>
 
 <template lang="html">
@@ -11,10 +21,7 @@ defineProps<{
     <div
       class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-neutral-800"
     >
-      <img
-        src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="card-image"
-      />
+      <img :src="getRandomImageUrl(item.listing_type)" alt="card-image" />
     </div>
 
     <div
