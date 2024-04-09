@@ -7,7 +7,8 @@
     "size": "43 m²",
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
-    "furnishing": "furnished"
+    "furnishing": "furnished",
+    "description":"Stunning family home nestled in a tranquil suburban neighborhood. This meticulously maintained property features a sprawling backyard with a lush garden and patio, perfect for outdoor gatherings and summer barbecues. With multiple bedrooms and a cozy fireplace, this house is an ideal sanctuary for growing families."
   },
   {
     "type": "room",
@@ -18,6 +19,8 @@
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
     "furnishing": "furnished"
+    ,
+    "description":"Cozy room in a vibrant neighborhood, perfect for students or young professionals. Enjoy the convenience of a shared kitchen and living area, ideal for socializing with housemates. Relax after a long day in the peaceful backyard garden oasis."
   },
   {
     "type": "room",
@@ -27,7 +30,8 @@
     "size": "13 m²",
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
-    "furnishing": "furnished"
+    "furnishing": "furnished",
+    "description":"Bright and airy room in a historic townhouse, brimming with character and charm. Share stories with fellow tenants in the cozy living room, or unwind with a good book in the sun-drenched reading nook. Take advantage of the convenience of a shared bathroom and laundry facilities."
   },
   {
     "type": "room",
@@ -37,7 +41,8 @@
     "size": "14 m²",
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
-    "furnishing": "furnished"
+    "furnishing": "furnished",
+    "description":"Sunny room in a friendly shared house, located just steps from local cafes and shops. Share meals with housemates in the spacious kitchen, or relax in the communal living room with a movie night. With hardwood floors and high ceilings, this room exudes warmth and comfort."
   },
   {
     "type": "studio",
@@ -47,7 +52,8 @@
     "size": "28 m²",
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
-    "furnishing": "furnished"
+    "furnishing": "furnished",
+    "description":"Stylish studio apartment with modern furnishings and ample natural light. This charming space features a private balcony, offering breathtaking views of the surrounding cityscape. Perfect for individuals seeking a quiet retreat in the heart of the city."
   },
   {
     "type": "room",
@@ -57,7 +63,8 @@
     "size": "20 m²",
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
-    "furnishing": "furnished"
+    "furnishing": "furnished",
+    "description":"Quaint room in a charming Victorian home, filled with period details and antique furnishings. Share stories with fellow housemates around the cozy fireplace in the elegant living room, or retreat to the peaceful backyard garden for some quiet reflection."
   },
   {
     "type": "house",
@@ -67,7 +74,8 @@
     "size": "67 m²",
     "url": "https://kamernet.nl/en/for-rent/apartment-enschede/kortenaerstraat/apartment-2213534",
     "date": "recent",
-    "furnishing": "furnished"
+    "furnishing": "furnished",
+    "description":"Charming cottage-style house with a wrap-around porch, perfect for enjoying morning coffee or evening sunsets. The expansive backyard features a tranquil pond and mature landscaping, creating a peaceful oasis in the heart of the suburbs. With a spacious layout and cozy fireplace, this house feels like home from the moment you step inside."
   },
   {
     "street": "Galjoenstraat,",
@@ -78,7 +86,8 @@
     "date": "From 3 Mar 2024",
     "utilities": "month",
     "price": 800,
-    "url": "https://kamernet.nl/en/for-rent/room-zaandam/galjoenstraat/room-2207096"
+    "url": "https://kamernet.nl/en/for-rent/room-zaandam/galjoenstraat/room-2207096",
+    "description":"Modern room in a newly constructed townhouse, thoughtfully designed with contemporary finishes and smart home technology. Enjoy the convenience of a private ensuite bathroom and walk-in closet, as well as access to a shared rooftop terrace with sweeping views of the skyline."
   },
   {
     "street": "Stoofsteeg,",
@@ -89,7 +98,8 @@
     "date": "From 1 Apr 2024",
     "utilities": "month",
     "price": "1,325",
-    "url": "https://kamernet.nl/en/for-rent/apartment-gouda/stoofsteeg/apartment-2207089"
+    "url": "https://kamernet.nl/en/for-rent/apartment-gouda/stoofsteeg/apartment-2207089",
+    "description":"Luxury apartment in a prestigious high-rise building, boasting panoramic views of the waterfront. Residents can indulge in resort-style amenities, including a sparkling swimming pool and state-of-the-art fitness center. With spacious closets and a designer kitchen, this apartment offers the epitome of modern living."
   },
   {
     "street": "Beeklaan,",
@@ -100,7 +110,8 @@
     "date": "3 Mar 2024 - 1 Mar 2026",
     "utilities": "month",
     "price": 725,
-    "url": "https://kamernet.nl/en/for-rent/studio-den-haag/beeklaan/studio-2207079"
+    "url": "https://kamernet.nl/en/for-rent/studio-den-haag/beeklaan/studio-2207079",
+    "description":"Contemporary studio apartment in a newly renovated building, featuring sleek finishes and modern amenities. The rooftop terrace offers stunning views of the city skyline, perfect for evening cocktails or weekend brunches. With a compact yet efficient layout, this studio is an urban dweller's dream."
   },
   {
     "street": "Fuutlaan,",
@@ -111,7 +122,8 @@
     "date": "From 16 Feb 2024",
     "utilities": "month incl. utilities",
     "price": 295,
-    "url": "https://kamernet.nl/en/for-rent/room-eindhoven/fuutlaan/room-2203691"
+    "url": "https://kamernet.nl/en/for-rent/room-eindhoven/fuutlaan/room-2203691",
+    "description":"Cozy attic room in a character-filled cottage, nestled in a leafy neighborhood just minutes from downtown. Curl up with a book in the window seat overlooking the garden, or unwind with a glass of wine on the covered porch. With a friendly atmosphere and welcoming hosts, this room feels like a home away from home."
   },
   {
     "street": "Meidoornsingel,",
@@ -122,7 +134,8 @@
     "date": "1 Sep 2024 - 1 Mar 2025",
     "utilities": "month incl. utilities",
     "price": 925,
-    "url": "https://kamernet.nl/en/for-rent/room-rotterdam/meidoornsingel/room-2207055"
+    "url": "https://kamernet.nl/en/for-rent/room-rotterdam/meidoornsingel/room-2207055",
+    "description":"Stylish room in a renovated farmhouse, surrounded by acres of rolling countryside. Wake up to the sound of birdsong and enjoy breakfast on the sunny patio overlooking the orchard. With hiking trails and vineyards nearby, this room is perfect for nature lovers seeking a tranquil retreat."
   },
   {
     "street": "Boekhorstlaan,",
@@ -133,7 +146,8 @@
     "date": "From 9 Mar 2024",
     "utilities": "month incl. utilities",
     "price": 800,
-    "url": "https://kamernet.nl/en/for-rent/studio-voorhout/boekhorstlaan/studio-2207056"
+    "url": "https://kamernet.nl/en/for-rent/studio-voorhout/boekhorstlaan/studio-2207056",
+    "description":"Contemporary studio apartment in a newly renovated building, featuring sleek finishes and modern amenities. The rooftop terrace offers stunning views of the city skyline, perfect for evening cocktails or weekend brunches. With a compact yet efficient layout, this studio is an urban dweller's dream."
   },
   {
     "street": "Maaslandse Dam,",
@@ -144,7 +158,8 @@
     "date": "From 1 Apr 2024",
     "utilities": "month",
     "price": "1,250",
-    "url": "https://kamernet.nl/en/for-rent/apartment-maasland/maaslandse-dam/apartment-2197726"
+    "url": "https://kamernet.nl/en/for-rent/apartment-maasland/maaslandse-dam/apartment-2197726",
+    "description":"Spacious apartment in a sought-after location, boasting panoramic views of the city skyline. This elegant residence offers residents access to exclusive amenities, including a fitness center and rooftop terrace. With an open-concept layout and gourmet kitchen, entertaining guests is a breeze."
   },
   {
     "street": "Hert. Ottostraat,",
@@ -155,7 +170,8 @@
     "date": "14 Feb - 1 Aug 2024",
     "utilities": "month incl. utilities",
     "price": 800,
-    "url": "https://kamernet.nl/en/for-rent/room-valkenswaard/hert.-ottostraat/room-2159396"
+    "url": "https://kamernet.nl/en/for-rent/room-valkenswaard/hert.-ottostraat/room-2159396",
+    "description":"Contemporary room in a chic urban apartment, boasting sleek design and high-end finishes. The shared living space features floor-to-ceiling windows offering stunning city views. Enjoy access to a rooftop terrace, perfect for sunset cocktails with friends."
   },
   {
     "street": "Jacques Perkstraat,",
@@ -166,7 +182,8 @@
     "date": "From 1 Apr 2024",
     "utilities": "month incl. utilities",
     "price": 650,
-    "url": "https://kamernet.nl/en/for-rent/room-eindhoven/jacques-perkstraat/room-2206911"
+    "url": "https://kamernet.nl/en/for-rent/room-eindhoven/jacques-perkstraat/room-2206911",
+    "description":"Sunny room in a bohemian-style loft, filled with eclectic decor and vibrant colors. Join fellow residents for community events in the communal lounge, or relax in the lush courtyard garden with a cup of tea. With a laid-back atmosphere and artistic vibe, this room is ideal for creatives and free spirits."
   },
   {
     "street": "Stadhouderslaan,",
@@ -177,7 +194,8 @@
     "date": "From 5 Mar 2024",
     "utilities": "month incl. utilities",
     "price": 590,
-    "url": "https://kamernet.nl/en/for-rent/room-groningen/stadhouderslaan/room-2206773"
+    "url": "https://kamernet.nl/en/for-rent/room-groningen/stadhouderslaan/room-2206773",
+    "description":"Elegant room in a historic brownstone, blending old-world charm with modern amenities. The spacious common areas are perfect for hosting gatherings or movie nights with housemates. Take a leisurely stroll through the nearby park or explore the trendy boutiques and cafes in the neighborhood."
   },
   {
     "street": "Broersvest,",
@@ -188,7 +206,8 @@
     "date": "8 Mar - 31 Aug 2024",
     "utilities": "month",
     "price": "1,000",
-    "url": "https://kamernet.nl/en/for-rent/room-schiedam/broersvest/room-2206633"
+    "url": "https://kamernet.nl/en/for-rent/room-schiedam/broersvest/room-2206633",
+    "description":"Quirky room in a converted warehouse, featuring exposed brick walls and industrial accents. The open-plan layout offers plenty of space for work and relaxation, while the building's rooftop deck provides panoramic views of the skyline. With a vibrant arts scene and lively nightlife, this room is perfect for urban adventurers."
   },
   {
     "street": "Ganzevoortsingel,",
@@ -199,7 +218,8 @@
     "date": "From 1 Mar 2024",
     "utilities": "month",
     "price": 950,
-    "url": "https://kamernet.nl/en/for-rent/studio-groningen/ganzevoortsingel/studio-2201219"
+    "url": "https://kamernet.nl/en/for-rent/studio-groningen/ganzevoortsingel/studio-2201219",
+    "description":"Tranquil studio in a peaceful suburban home, surrounded by lush gardens and mature trees. Spend lazy afternoons lounging by the pool or enjoying a barbecue in the backyard. With friendly hosts and a warm, welcoming atmosphere, this studio offers a cozy retreat from the hustle and bustle of city life."
   },
   {
     "street": "St.-Ludgerusstraat,",
@@ -210,7 +230,8 @@
     "date": "1 Apr 2024 - 1 Apr 2026",
     "utilities": "month",
     "price": "1,300",
-    "url": "https://kamernet.nl/en/for-rent/apartment-utrecht/st.-ludgerusstraat/apartment-2206449"
+    "url": "https://kamernet.nl/en/for-rent/apartment-utrecht/st.-ludgerusstraat/apartment-2206449",
+    "description":"Spacious apartment in a tranquil residential neighborhood, providing a peaceful retreat from the city hustle. The well-appointed kitchen features granite countertops and stainless steel appliances, perfect for culinary enthusiasts. Residents can relax in the landscaped courtyard or explore the nearby parks and walking trails. With easy access to public transportation and local amenities, this apartment combines convenience with comfort for modern urban living."
   },
   {
     "street": "Ruysdaelkade,",
@@ -221,7 +242,8 @@
     "date": "From 8 Apr 2024",
     "utilities": "month incl. utilities",
     "price": "1,038",
-    "url": "https://kamernet.nl/en/for-rent/room-amsterdam/ruysdaelkade/room-2206267"
+    "url": "https://kamernet.nl/en/for-rent/room-amsterdam/ruysdaelkade/room-2206267",
+    "description":"Tranquil room in a peaceful suburban home, surrounded by lush gardens and mature trees. Spend lazy afternoons lounging by the pool or enjoying a barbecue in the backyard. With friendly hosts and a warm, welcoming atmosphere, this room offers a cozy retreat from the hustle and bustle of city life."
   },
   {
     "street": "Notenlaan,",
@@ -232,7 +254,8 @@
     "date": "From 1 Jun 2024",
     "utilities": "month incl. utilities",
     "price": 795,
-    "url": "https://kamernet.nl/en/for-rent/room-amstelveen/notenlaan/room-2205532"
+    "url": "https://kamernet.nl/en/for-rent/room-amstelveen/notenlaan/room-2205532",
+    "description":"Rustic room in a countryside farmhouse, offering a cozy escape from the hustle and bustle of city life. Enjoy the tranquil surroundings and panoramic views of rolling hills from the comfort of your window seat. With access to a communal kitchen and dining area, this room is perfect for those seeking a peaceful retreat in nature."
   },
   {
     "street": "Gildelaan,",
@@ -243,7 +266,8 @@
     "date": "From 1 Apr 2024",
     "utilities": "month incl. utilities",
     "price": "2,000",
-    "url": "https://kamernet.nl/en/for-rent/apartment-eindhoven/gildelaan/apartment-2205670"
+    "url": "https://kamernet.nl/en/for-rent/apartment-eindhoven/gildelaan/apartment-2205670",
+    "description":"Stylish apartment in a vibrant urban neighborhood, offering the perfect blend of convenience and luxury. The open-plan layout is flooded with natural light, highlighting the high-end finishes and modern furnishings. Residents can unwind on the private balcony overlooking the city skyline or take advantage of the building's amenities, including a fitness center, pool, and rooftop lounge."
   },
   {
     "street": "Spijkenissestraat,",
@@ -254,7 +278,8 @@
     "date": "1 Mar - 31 Aug 2024",
     "utilities": "month",
     "price": "1,100",
-    "url": "https://kamernet.nl/en/for-rent/apartment-rotterdam/spijkenissestraat/apartment-2201354"
+    "url": "https://kamernet.nl/en/for-rent/apartment-rotterdam/spijkenissestraat/apartment-2201354",
+    "description":"Sophisticated apartment in a prestigious residential tower, boasting breathtaking views of the waterfront and city skyline. The spacious living area features floor-to-ceiling windows, allowing residents to enjoy panoramic vistas from every angle. With premium appliances, sleek finishes, and access to exclusive amenities such as a concierge service, spa, and private cinema, this apartment offers the epitome of luxury living."
   },
   {
     "street": "Velveweg,",
@@ -265,7 +290,8 @@
     "date": "From 1 Mar 2024",
     "utilities": "month",
     "price": 368,
-    "url": "https://kamernet.nl/en/for-rent/room-enschede/velveweg/room-2204851"
+    "url": "https://kamernet.nl/en/for-rent/room-enschede/velveweg/room-2204851",
+    "description":"Contemporary room in a modern apartment complex, offering sleek design and luxurious amenities. The spacious floor plan includes a private ensuite bathroom and walk-in closet, while the shared living space is perfect for entertaining guests. Residents can enjoy access to a fitness center, pool, and rooftop terrace with stunning city views."
   },
   {
     "street": "De Ruijterstraat,",
@@ -276,7 +302,8 @@
     "date": "From 1 Apr 2024",
     "utilities": "month incl. utilities",
     "price": 700,
-    "url": "https://kamernet.nl/en/for-rent/room-den-haag/de-ruijterstraat/room-2207052"
+    "url": "https://kamernet.nl/en/for-rent/room-den-haag/de-ruijterstraat/room-2207052",
+    "description":"Elegant room in a historic townhouse, featuring period details and antique furnishings. The grand staircase and stained glass windows evoke a sense of old-world charm, while the spacious common areas are perfect for socializing with housemates. With a convenient location near local shops and restaurants, this room offers the perfect blend of elegance and convenience."
   },
   {
     "street": "Tulpenstraat,",
@@ -287,7 +314,8 @@
     "date": "From 1 Feb 2024",
     "utilities": "month incl. utilities",
     "price": 795,
-    "url": "https://kamernet.nl/en/for-rent/room-breda/tulpenstraat/room-2199572"
+    "url": "https://kamernet.nl/en/for-rent/room-breda/tulpenstraat/room-2199572",
+    "description":""
   },
   {
     "street": "Herman Colleniusstraat,",
@@ -298,7 +326,8 @@
     "date": "From 18 Mar 2024",
     "utilities": "month",
     "price": "3,000",
-    "url": "https://kamernet.nl/en/for-rent/apartment-groningen/herman-colleniusstraat/apartment-2207045"
+    "url": "https://kamernet.nl/en/for-rent/apartment-groningen/herman-colleniusstraat/apartment-2207045",
+    "description":"Elegant apartment nestled in a serene suburban enclave, offering a peaceful retreat from the hustle and bustle of the city. The spacious floor plan boasts high ceilings and oversized windows, flooding the interiors with natural light. Residents can unwind on the private balcony overlooking lush greenery or take a leisurely stroll through the landscaped grounds. With a fully equipped kitchen, generous storage space, and access to on-site amenities including a pool and fitness center, this apartment provides the perfect combination of comfort and convenience for modern living."
   },
   {
     "street": "Bottelroosstraat,",
@@ -309,7 +338,8 @@
     "date": "From 4 Mar 2024",
     "utilities": "month incl. utilities",
     "price": 675,
-    "url": "https://kamernet.nl/en/for-rent/room-groningen/bottelroosstraat/room-2207038"
+    "url": "https://kamernet.nl/en/for-rent/room-groningen/bottelroosstraat/room-2207038",
+    "description":"Cozy attic room in a charming cottage, nestled in a quaint village setting. The sloped ceilings and exposed beams add character to the space, while the skylight lets in plenty of natural light. Curl up with a good book in the window nook or explore the nearby trails and historic landmarks."
   },
   {
     "street": "Admiraal de Ruyterweg,",
@@ -320,7 +350,8 @@
     "date": "1 Apr 2024 - 1 Mar 2025",
     "utilities": "month",
     "price": "1,800",
-    "url": "https://kamernet.nl/en/for-rent/apartment-rotterdam/admiraal-de-ruyterweg/apartment-2205700"
+    "url": "https://kamernet.nl/en/for-rent/apartment-rotterdam/admiraal-de-ruyterweg/apartment-2205700",
+    "description":"Luxurious apartment situated in a prestigious high-rise, offering unparalleled views of the city skyline. This sophisticated residence features floor-to-ceiling windows, sleek hardwood floors, and designer finishes throughout. Residents can relax in the expansive living area or enjoy al fresco dining on the private terrace. With access to amenities such as a state-of-the-art fitness center, spa, and concierge service, this apartment provides the epitome of urban luxury living."
   },
   {
     "street": "Kreekrugpad,",
@@ -331,7 +362,8 @@
     "date": "From 2 Apr 2024",
     "utilities": "month incl. utilities",
     "price": 430,
-    "url": "https://kamernet.nl/en/for-rent/room-delft/kreekrugpad/room-2206996"
+    "url": "https://kamernet.nl/en/for-rent/room-delft/kreekrugpad/room-2206996",
+    "description":"Cozy room in a historic brownstone, offering a blend of old-world charm and modern comfort. The room features hardwood floors, a decorative fireplace, and elegant crown molding. Residents can unwind in the shared living space or enjoy quiet moments in the sunlit bedroom. With easy access to public transportation and local amenities, this room is ideal for urban dwellers looking for convenience and charm."
   },
   {
     "street": "Henri Jonasstraat,",
@@ -342,7 +374,8 @@
     "date": "From 10 Feb 2024",
     "utilities": "month incl. utilities",
     "price": 525,
-    "url": "https://kamernet.nl/en/for-rent/room-sittard/henri-jonasstraat/room-2202444"
+    "url": "https://kamernet.nl/en/for-rent/room-sittard/henri-jonasstraat/room-2202444",
+    "description":"Stylish room in a trendy loft apartment, boasting industrial-inspired design and vibrant decor. The exposed brick walls and high ceilings create a loft-like atmosphere, while the large windows offer views of the bustling city streets below. Residents can socialize with housemates in the spacious common areas or retreat to the cozy bedroom for some privacy. With a prime location near cafes, galleries, and nightlife, this room is perfect for young professionals and creatives alike."
   },
   {
     "street": "Pleinweg,",
@@ -353,7 +386,8 @@
     "date": "From 1 Jul 2024",
     "utilities": "month",
     "price": "1,300",
-    "url": "https://kamernet.nl/en/for-rent/apartment-rotterdam/pleinweg/apartment-2203695"
+    "url": "https://kamernet.nl/en/for-rent/apartment-rotterdam/pleinweg/apartment-2203695",
+    "description":"Serene apartment nestled in a picturesque suburban setting, offering tranquility and comfort. This charming residence features spacious interiors with high ceilings and large windows, creating a bright and inviting atmosphere. Residents can enjoy leisurely walks in the nearby park or relax on the private patio overlooking lush greenery. With easy access to local shops, restaurants, and transportation, this apartment provides the perfect retreat for those seeking a balanced lifestyle."
   },
   {
     "street": "Graaf Balderikstraat,",
@@ -364,7 +398,8 @@
     "date": "From 1 Apr 2024",
     "utilities": "month incl. utilities",
     "price": "1,000",
-    "url": "https://kamernet.nl/en/for-rent/room-rotterdam/graaf-balderikstraat/room-2207002"
+    "url": "https://kamernet.nl/en/for-rent/room-rotterdam/graaf-balderikstraat/room-2207002",
+    "description":"Stylish room in a trendy loft apartment, boasting industrial-inspired design and vibrant decor. The exposed brick walls and high ceilings create a loft-like atmosphere, while the large windows offer views of the bustling city streets below. Residents can socialize with housemates in the spacious common areas or retreat to the cozy bedroom for some privacy. With a prime location near cafes, galleries, and nightlife, this room is perfect for young professionals and creatives alike."
   },
   {
     "street": "Adelbert van Scharnlaan H,",
@@ -375,7 +410,8 @@
     "date": "From 15 Mar 2024",
     "utilities": "month incl. utilities",
     "price": 300,
-    "url": "https://kamernet.nl/en/for-rent/room-maastricht/adelbert-van-scharnlaan-h/room-2203634"
+    "url": "https://kamernet.nl/en/for-rent/room-maastricht/adelbert-van-scharnlaan-h/room-2203634",
+    "description":"Quaint room in a cozy cottage, surrounded by lush gardens and scenic views. The room features a comfortable bed, a small desk, and ample storage space. Residents can enjoy leisurely walks in the nearby countryside or relax in the charming communal living area. With a warm and welcoming atmosphere, this room provides a peaceful retreat for those seeking a slower pace of life."
   },
   {
     "street": "Koemarkt,",
@@ -386,7 +422,8 @@
     "date": "From 16 Feb 2024",
     "utilities": "month incl. utilities",
     "price": 600,
-    "url": "https://kamernet.nl/en/for-rent/room-purmerend/koemarkt/room-2203783"
+    "url": "https://kamernet.nl/en/for-rent/room-purmerend/koemarkt/room-2203783",
+    "description":"Modern room in a newly constructed townhouse, thoughtfully designed with contemporary finishes and smart home technology. Enjoy the convenience of a private ensuite bathroom and walk-in closet, as well as access to a shared rooftop terrace with sweeping views of the skyline."
   },
   {
     "street": "Nicolaas Anslijnstraat,",
@@ -397,6 +434,7 @@
     "date": "22 Mar - 7 Apr 2024",
     "utilities": "month incl. utilities",
     "price": "1,500",
-    "url": "https://kamernet.nl/en/for-rent/apartment-amsterdam/nicolaas-anslijnstraat/apartment-2206991"
+    "url": "https://kamernet.nl/en/for-rent/apartment-amsterdam/nicolaas-anslijnstraat/apartment-2206991",
+    "description":"Luxury apartment in a prestigious high-rise building, boasting panoramic views of the waterfront. Residents can indulge in resort-style amenities, including a sparkling swimming pool and state-of-the-art fitness center. With spacious closets and a designer kitchen, this apartment offers the epitome of modern living."
   }
 ]
