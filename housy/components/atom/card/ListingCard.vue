@@ -3,15 +3,6 @@ defineProps<{
   item: Listing;
 }>();
 
-function getRandomInt(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function getRandomImageUrl(listingType: string) {
-  const basePath = `img/`;
-  const randomNumber = getRandomInt(1, 5);
-  return `${basePath}${listingType.toLowerCase()}${randomNumber}.jpg`;
-}
 </script>
 
 <template lang="html">
@@ -21,7 +12,7 @@ function getRandomImageUrl(listingType: string) {
     <div
       class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-neutral-800"
     >
-      <img :src="getRandomImageUrl(item.listing_type)" alt="card-image" />
+      <img :src="item.imgUrl" alt="card-image" />
     </div>
 
     <div
@@ -39,10 +30,7 @@ function getRandomImageUrl(listingType: string) {
         month, utilities {{ item.cover_cost }}. This beatifull
         {{ item.listing_type }} is {{ item.size }} meters squared and
         {{ item.furnishing }}. <br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        {{ item.description.slice(0,80) }}...
       </p>
     </div>
     <div class="p-6 pt-0 bg-white dark:bg-neutral-800 rounded-b-lg">

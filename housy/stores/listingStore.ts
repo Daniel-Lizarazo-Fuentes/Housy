@@ -11,8 +11,10 @@ export type Listing = {
   city: string;
   size: number;
   url: string;
+  imgUrl: string;
   date: string;
   furnishing: "furnished" | "unfurnished" | "carpeted" | "uncarpeted";
+  description: string;
   landlord: {
     name: string;
     number: string | undefined;
@@ -24,6 +26,16 @@ export const useListingStore = defineStore(
   "listing_store",
   () => {
     const listings = ref<Array<Listing>>([]);
+
+    function getRandomInt(min: number, max: number) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function getRandomImageUrl(listingType: string) {
+      const basePath = `img/`;
+      const randomNumber = getRandomInt(1, 5);
+      return `${basePath}${listingType.toLowerCase()}${randomNumber}.jpg`;
+    }
 
     listingsJSON.forEach((data, index) => {
       listings.value.push({
@@ -45,6 +57,11 @@ export const useListingStore = defineStore(
         city: data.city,
         size: parseInt(data.size.replace(" m²", "")),
         url: data.url,
+        imgUrl: getRandomImageUrl(
+          (data.type.match(/\b(?:house|apartment|studio|room|attic)\b/i) || [
+            "room",
+          ])[0] as "house" | "apartment" | "studio" | "room" | "attic"
+        ),
         date: data.date,
         furnishing: (data.type.match(
           /\b(?:furnished|unfurnished|carpeted|uncarpeted)\b/i
@@ -53,6 +70,7 @@ export const useListingStore = defineStore(
           | "unfurnished"
           | "carpeted"
           | "uncarpeted",
+        description: data.description,
         landlord: {
           name: "Dave van Dijk",
           number: "+31 6 835 7353",
@@ -80,7 +98,9 @@ export const useListingStore = defineStore(
       if (sizeCategory === "100plus") {
         return size >= 100;
       } else {
-        const [lower, upper] = sizeCategory.split("to").map(value => parseInt(value));
+        const [lower, upper] = sizeCategory
+          .split("to")
+          .map((value) => parseInt(value));
         if (!upper) {
           return size >= lower;
         } else {
@@ -91,18 +111,18 @@ export const useListingStore = defineStore(
 
     function filterPriceRange(price: number, priceCategory: string): boolean {
       switch (priceCategory) {
-        case '300':
+        case "300":
           return price <= 300;
-        case '500':
+        case "500":
           return price <= 500;
-        case '700':
+        case "700":
           return price <= 700;
-        case '900':
+        case "900":
           return price <= 900;
-        case '99999999':
+        case "99999999":
           return price > 900;
         default:
-          return true; 
+          return true;
       }
     }
 
@@ -117,13 +137,20 @@ export const useListingStore = defineStore(
       filters.value.house_location = location;
       filters.value.house_price = price;
 
-      filtered_listings.value = listings.value.filter(listing => {
+      filtered_listings.value = listings.value.filter((listing) => {
+        const typeMatch =
+          filters.value.house_type === "" ||
+          listing.listing_type.toLowerCase() === filters.value.house_type;
+        const sizeMatch =
+          filters.value.house_size === "" ||
+          filterSizeRange(listing.size, filters.value.house_size);
+        const locationMatch =
+          filters.value.house_location === "" ||
+          listing.city === filters.value.house_location;
+        const priceMatch =
+          filters.value.house_price === "" ||
+          filterPriceRange(listing.price, filters.value.house_price);
 
-        const typeMatch = filters.value.house_type === "" || listing.listing_type.toLowerCase() === filters.value.house_type;
-        const sizeMatch = filters.value.house_size === "" || filterSizeRange(listing.size, filters.value.house_size);
-        const locationMatch = filters.value.house_location === "" || listing.city === filters.value.house_location;
-        const priceMatch = filters.value.house_price === "" || filterPriceRange(listing.price, filters.value.house_price);
-    
         return typeMatch && sizeMatch && locationMatch && priceMatch;
       });
     }
